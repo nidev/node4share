@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script language="javascript" type="text/javascript" src="/javascripts/jquery2.js"></script>
+  </head>
+  <body>
+  <div class="main_topfloat" onclick="$('#main_navi').toggle();">
+    <%= title %><br />
+    <%= master_list['nfolder'] %> Fd(s), <%= master_list['nfile'] %> Fl(s) in <%= time_elapsed %> secs
+    <br />
+    <div id="main_navi">
+      <span class="motd">[NOTICE] <%= retrieve_motd() %></span><br />
+      <a href="<%= prev_path %>"><img src="/images/back.png" alt="back"></a>
+      <a href="/"><img src="/images/home.png" alt="home"></a>
+      <a href="<%= current_path %>"><img src="/images/reload.png" alt="refresh"></a>
+    </div>
+  </div>
+<div class="main_scroll">
+    <p>
+      <%
+      for (var int_i = 0 ; int_i < master_list['files'].length ; int_i++) 
+      {
+      var fileobj = master_list['files'][int_i];
+      %>
+      <div class="boxed">
+        <div class="main_ext">[<%= fileobj['isdir'] ? "folder" : fileobj['ext'] %>] </div>
+        <a href="/x<%= current_path +  fileobj['fname'] %>" alt="<%= fileobj['fname'] %>">
+        <div class="main_filename"><%= filename_compaction(fileobj['fname']) %></div>
+        </a>
+        <div class="main_filesize">
+        <%= fileobj['isdir'] ? " " : ( fileobj['size'] < 102400 ? "<100kB" : (fileobj['size']/1024/1024).toFixed(2) + "MB") %>
+        </div>
+      </div>
+      <% } %>
+  </p>
+  <p>
+      
+  </p>
+  </div>
+  </body>
+</html>

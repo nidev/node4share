@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+div.boxed {
+  border-bottom: 2px solid #aaa;
+}
+
+div.main_topfloat{
+  position: fixed;
+  font-size:1.0em;
+  background-color: #aaa;
+  width:100%;
+  z-index:2;
+}
+
+span.text_button {
+  
+}
+
+div#main_navi {
+  display: none;
+  width: inherit;
+  padding: 2px 2px 2px 2px;
+  background-color: #DDDDDD;
+}
+
+
+span.motd {
+  border: 1px solid #888;
+}
+
+div.main_scroll {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top:60px;
+  width:95%;
+  z-index: 1;
+}
+
+div.main_ext {
+  float:right;
+  width: 50px;
+  font-size: 1.0em;
+}
+
+div.main_filename {
+  width:80%;
+  font-size: 1.5em;
+  overflow-x:hidden;
+}
+
+div.main_filename:hover {
+  background-color:  #112233;
+}
+
+
+div.main_filesize {
+  width:30px;
+  font-size: 1.2em;
+}
+

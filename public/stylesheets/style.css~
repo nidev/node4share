@@ -1,0 +1,56 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+div.boxed {
+  border-bottom: 2px solid grey;
+};
+
+div.main_ext {
+  width: 50px;
+  font-size: 1.2em;
+}
+
+div.main_filename {
+  font-size: 2.5em;
+}
+
+div.main_filename:hover {
+  background-color:  #112233;
+}
+
+
+div.main_filesize {
+  width:30px;
+  font-size: 1.2em;
+}
+
+div.main_topfloat{
+  position: fixed;
+  font-size:3.0em;
+  background-color: grey;
+  width:100%;
+  vertical-align:center;
+}
+
+div.main_scroll {
+}
+
+span.text_button {
+  
+}
+
+div.main_topfloat_inner_text_button {
+  float: left;
+  font-size:4.0em;
+  width:10%;
+}
+
+div.main_topfloat_inner_information {
+  float:right;
+  width:85%;
+}

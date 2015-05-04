@@ -1,0 +1,21 @@
+{
+  "name": "node4share",
+  "version": "0.0.2",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express-session": "*",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "serve-favicon": "*",
+    "method-override": "*",
+    "errorhandler": "*",
+    "multer": "*",
+    "morgan": "*",
+    "serve-static": "*",
+    "express": "*",
+    "ejs": "*"
+  }
+}
