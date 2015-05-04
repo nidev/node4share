@@ -16,9 +16,25 @@ $ npm install
 $ node app.js
 ```
 
-## Message of the day (MOTD)
+## Features
+### Message of the day (MOTD)
 
 You can set MOTD on server_motd file.
 
+### Navigator
 
+By tapping top bar, you can see navigator buttons (back/home/refresh)
+
+### Filename compaction
+
+Node4share compacts displayed filename by removing square/rounded brackets.
+
+Before:
+```text
+[Foo] bar pictures (copied)
+```
+After
+```text
+bar pictures
+```
 
